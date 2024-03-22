@@ -1,0 +1,12 @@
+{
+  "user": "57313",
+  "totalMemoryGB": "7.84",
+  "freeMemoryGB": "2.01",
+  "cpuModel": "Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz",
+  "mostDemandingProcess": {
+    "rss": "0.02 GB",
+    "heapTotal": "0.00 GB",
+    "heapUsed": "0.00 GB",
+    "external": "0.00 GB"
+  }
+}

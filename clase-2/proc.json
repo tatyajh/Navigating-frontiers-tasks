@@ -1,0 +1,12 @@
+{
+  "user": "57313",
+  "totalMemoryGB": "7.84",
+  "freeMemoryGB": "1.98",
+  "cpuModel": "Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz",
+  "mostDemandingProcess": {
+    "Id": "20948",
+    "ProcessName": "Code",
+    "CPU": "683,59375",
+    "PM": "363687936"
+  }
+}
