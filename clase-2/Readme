@@ -1,9 +1,0 @@
-totalMemory: Se expresa en bytes.
-freeMemory: Se expresa en bytes.
-cpu.speed: Se expresa en megahercios (MHz).
-cpu.times:
-user: Tiempo que la CPU ha estado ejecutando código de usuario en milisegundos.
-nice: Tiempo que la CPU ha estado ejecutando código de usuario con prioridad baja en milisegundos.
-sys: Tiempo que la CPU ha estado ejecutando código del sistema en milisegundos.
-idle: Tiempo que la CPU ha estado inactiva en milisegundos.
-irq: Tiempo que la CPU ha estado manejando interrupciones en milisegundos.

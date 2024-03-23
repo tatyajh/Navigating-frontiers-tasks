@@ -12,8 +12,8 @@ const server = http.createServer((req, res) => {
   });
 
   req.on("end", () => {
-    // Manejar solicitudes GET para /counterA
-    if (req.method === "GET" && req.url === "/counterA") {
+    // Manejar solicitudes GET para /visitas
+    if (req.method === "GET" && req.url === "/visitas") {
       const resBody = { counterA };
 
       // Establecer el encabezado de la respuesta y enviar la respuesta
@@ -24,7 +24,7 @@ const server = http.createServer((req, res) => {
     }
 
     // Manejar solicitudes GET para /counterB
-    if (req.method === "GET" && req.url === "/counterB") {
+    if (req.method === "GET" && req.url === "/compras") {
       const resBody = { counterB };
 
       // Establecer el encabezado de la respuesta y enviar la respuesta
@@ -35,7 +35,7 @@ const server = http.createServer((req, res) => {
     }
 
     // Manejar solicitudes POST para /counterA
-    if (req.method === "POST" && req.url === "/counterA") {
+    if (req.method === "POST" && req.url === "/visitas") {
       counterA += parseInt(JSON.parse(reqBody).increment); // Incrementar counterA
       const resBody = { counterA };
 
@@ -47,7 +47,7 @@ const server = http.createServer((req, res) => {
     }
 
     // Manejar solicitudes POST para /counterB
-    if (req.method === "POST" && req.url === "/counterB") {
+    if (req.method === "POST" && req.url === "/compras") {
       counterB += parseInt(JSON.parse(reqBody).increment); // Incrementar counterB
       const resBody = { counterB };
 

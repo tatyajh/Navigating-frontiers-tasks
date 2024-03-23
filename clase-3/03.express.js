@@ -3,35 +3,35 @@ import express from "express";
 const PORT = 3000;
 const app = express();
 
-let visitas = 0;
-let compras = 1;
+let counterA = 0;
+let counterB = 0;
 
 // Analizar cuerpos JSON en las solicitudes entrantes
 app.use(express.json());
 
 // Manejar solicitudes GET para /counterA
-app.get("/visitas", (req, res) => {
-  const resBody = {  visitas };
+app.get("/counterA", (req, res) => {
+  const resBody = { counterA };
   res.status(200).json(resBody);
 });
 
 // Manejar solicitudes GET para /counterB
-app.get("/compras", (req, res) => {
-  const resBody = {  compras };
+app.get("/counterB", (req, res) => {
+  const resBody = { counterB };
   res.status(200).json(resBody);
 });
 
 // Manejar solicitudes POST para /counterA
-app.post("/visitas", (req, res) => {
-  visitas += parseInt(req.body.increment); // Incrementar counterA
-  const resBody = { visitas };
+app.post("/counterA", (req, res) => {
+  counterA += parseInt(req.body.increment); // Incrementar counterA
+  const resBody = { counterA };
   res.status(200).json(resBody);
 });
 
 // Manejar solicitudes POST para /counterB
-app.post("/compras", (req, res) => {
-  compras += parseInt(req.body.increment); // Incrementar counterB
-  const resBody = { compras };
+app.post("/counterB", (req, res) => {
+  counterB += parseInt(req.body.increment); // Incrementar counterB
+  const resBody = { counterB };
   res.status(200).json(resBody);
 });
 
